@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { PopupModal } from "react-calendly";
+
 
 // import data
 import { courses } from '../data';
+
+
 // import icons
 import { BsStarFill, BsStarHalf } from 'react-icons/bs';
 
-const Courses = () => {
+const Courses = (props) => {
+
+  const [isOpen, setisOpen] = useState(false);
+  const [modalUrl, setmodalUrl] = useState();
+
+
+  const ModalO = async (e) => {
+    setmodalUrl(e);
+
+    setisOpen(true);
+  };
   return (
     <section className='section-sm lg:section-lg'>
       <div className='container mx-auto'>
@@ -16,7 +30,7 @@ const Courses = () => {
             data-aos='fade-down'
             data-aos-delay='200'
           >
-            Popular Courses
+            Group Classes
           </h2>
           <p
             className='max-w-[480px] mx-auto'
@@ -30,7 +44,7 @@ const Courses = () => {
         {/* course list */}
         <div className='flex flex-col lg:flex-row lg:gap-x-[33px] gap-y-24 mb-7 lg:mb-14'>
           {courses.map((item, index) => {
-            const { image, title, desc, link, delay } = item;
+            const { image, title, desc, link, delay, calendlyurl } = item;
             return (
               <div
                 className='w-full max-w-[368px] px-[18px] pb-[26px] lg:px-[28px] lg:pb-[38px] bg-white hover:shadow-primary flex flex-col rounded-[14px] mx-auto transition'
@@ -56,9 +70,9 @@ const Courses = () => {
                     <BsStarFill />
                     <BsStarHalf />
                   </div>
-                  <a className='font-medium' href='#'>
+                  <button className='font-medium hover:text-blue' onClick={() => ModalO(calendlyurl)}>
                     {link}
-                  </a>
+                  </button>
                 </div>
               </div>
             );
@@ -74,6 +88,20 @@ const Courses = () => {
           </button>
         </div>
       </div>
+
+      <PopupModal
+          url={modalUrl}
+          pageSettings={props.pageSettings}
+          utm={props.utm}
+          prefill={props.prefill}
+          onModalClose={() => setisOpen(false)}
+          open={isOpen}
+          /*
+           * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+           * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+           */
+          rootElement={document.getElementById("root")}
+        />
     </section>
   );
 };

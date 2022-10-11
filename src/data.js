@@ -6,6 +6,10 @@ import CourseImage1 from '../src/assets/img/courses/course-1.png';
 import CourseImage2 from '../src/assets/img/courses/course-2.png';
 import CourseImage3 from '../src/assets/img/courses/course-3.png';
 
+import TestiImage1 from '../src/assets/img/courses/course-1.png';
+import TestiImage2 from '../src/assets/img/courses/course-2.png';
+import TestiImage3 from '../src/assets/img/courses/course-3.png';
+
 export const navigation = [
   {
     name: 'Home',
@@ -59,24 +63,50 @@ export const facts = [
 export const courses = [
   {
     image: CourseImage1,
-    title: 'Resortive Yoga Training & Immersion',
-    desc: 'Here is some tips for new job seekars who want to get a dream job and want to shine in his career.',
-    link: 'Get started',
+    title: 'Sound healing & meditation up to 5 people',
+    desc: 'Guided meditation accompanied by a sound therapy with a duration of 60 minutes.',
+    link: 'Schedule now',
     delay: '600',
+    calendlyurl: 'https://calendly.com/luzeehel/meditation-session-group-5'
   },
   {
     image: CourseImage2,
-    title: 'Resortive Yoga Training & Immersion',
-    desc: 'Here is some tips for new job seekars who want to get a dream job and want to shine in his career.',
-    link: 'Get started',
+    title: 'Sound healing + meditation up to 10 people',
+    desc: 'Guided meditation accompanied by a sound therapy with a duration of 60 minutes.',
+    link: 'Schedule now',
     delay: '800',
+    calendlyurl: 'https://calendly.com/luzeehel/sound-healing-meditation-up-to-10-people'
   },
   {
     image: CourseImage3,
-    title: 'Resortive Yoga Training & Immersion',
-    desc: 'Here is some tips for new job seekars who want to get a dream job and want to shine in his career.',
-    link: 'Get started',
+    desc: 'Guided meditation accompanied by a sound therapy with a duration of 60 minutes.',
+    link: 'Schedule now',
     delay: '900',
+    calendlyurl: 'https://calendly.com/luzeehel/meditation-session-group-5'
+  },
+];
+
+export const testimonials = [
+  {
+    authorImg: TestiImage1,
+    authorText:
+      'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
+    authorName: 'Olivia Doe',
+    authorPosition: 'Head of Design, Google',
+  },
+  {
+    authorImg: TestiImage2,
+    authorText:
+      'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
+    authorName: 'Olivia Doe',
+    authorPosition: 'Head of Design, Google',
+  },
+  {
+    authorImg: TestiImage3,
+    authorText:
+      'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
+    authorName: 'Olivia Doe',
+    authorPosition: 'Head of Design, Google',
   },
 ];
 

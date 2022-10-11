@@ -14,7 +14,9 @@ import Pricing from './Pricing';
 import Newsletter from './Newsletter';
 import Contact from './Contact';
 import Footer from './Footer';
-import { Booking } from './Booking';
+import Testimonials from './Testimonials';
+
+
 export const Home = () => {
   Aos.init({
     duration: 1800,
@@ -29,6 +31,7 @@ export const Home = () => {
       <Features />
       <Courses />
       <Pricing />
+      <Testimonials/>
       <Newsletter />
       <Contact />
       <Footer />

@@ -5,7 +5,7 @@ import { MdEmail } from 'react-icons/md';
 
 const Newsletter = () => {
   return (
-    <section className='section-sm lg:section-lg bg-green min-h-[520px]'>
+    <section className='section-sm lg:section-lg bg-green min-h-[520px] mt-[100px]'>
       <div className='container mx-auto'>
         <div
           className='border-[8px] border-green-300 rounded-lg text-center pt-[70px] pb-12'
