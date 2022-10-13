@@ -6,6 +6,7 @@ import CountUp from 'react-countup';
 import Image from '../assets/img/LOGO2.png';
 // import data
 import { facts } from '../data';
+import { about } from '../data';
 
 const Facts = () => {
   return (
@@ -15,6 +16,17 @@ const Facts = () => {
           className='flex-1 flex flex-wrap gap-x-[5%] gap-y-[35px]'
           data-aos='fade-up'
         >
+          {about.map((item, index) => {
+            const {title, desc } = item;
+            return (
+              <div className='w-[100%]' key={index}>
+                <div className='h2 mb-2 lg:mb-4'>
+                  {title}
+                </div>
+                <p className='max-w-[480px]'>{desc}</p>
+              </div>
+            );
+          })}
           {facts.map((item, index) => {
             const { startNumber, endNumber, unit, title, desc } = item;
             return (

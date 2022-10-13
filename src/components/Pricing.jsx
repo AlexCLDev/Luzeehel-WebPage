@@ -77,7 +77,7 @@ const Pricing = (props) => {
                       Discover your favorite class!
                     </p>
                     {/* card list */}
-                    <ul className="flex flex-col gap-3 mb-10 flex-wrap">
+                    <ul className="flex flex-col gap-3 mb-14 flex-wrap">
                       {list.map((item, index) => {
                         const { icon, name } = item;
                         return (

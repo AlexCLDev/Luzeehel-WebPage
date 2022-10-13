@@ -1,88 +1,82 @@
 // import icons
-import { BsCheck, BsChevronRight } from 'react-icons/bs';
+import { BsCheck, BsChevronRight } from "react-icons/bs";
 
 // import images
-import CourseImage1 from '../src/assets/img/courses/course-1.png';
-import CourseImage2 from '../src/assets/img/courses/course-2.png';
-import CourseImage3 from '../src/assets/img/courses/course-3.png';
+import CourseImage1 from "../src/assets/img/courses/course-1.png";
+import CourseImage2 from "../src/assets/img/courses/course-2.png";
+import CourseImage3 from "../src/assets/img/courses/course-3.png";
 
-import TestiImage1 from '../src/assets/img/courses/course-1.png';
-import TestiImage2 from '../src/assets/img/courses/course-2.png';
-import TestiImage3 from '../src/assets/img/courses/course-3.png';
+import TestiImage1 from "../src/assets/img/courses/course-1.png";
+import TestiImage2 from "../src/assets/img/courses/course-2.png";
+import TestiImage3 from "../src/assets/img/courses/course-3.png";
 
 export const navigation = [
   {
-    name: 'Home',
-    href: '#',
+    name: "Home",
+    href: "#",
   },
   {
-    name: 'Classes',
-    href: '#',
+    name: "Classes",
+    href: "#",
   },
   {
-    name: 'Features',
-    href: '#',
+    name: "Features",
+    href: "#",
   },
   {
-    name: 'Contact',
-    href: '#',
+    name: "Contact",
+    href: "#",
   },
 ];
 
 export const facts = [
   {
-    startNumber: '1',
-    endNumber: '5',
-    unit: '',
-    title: 'Years of Experience',
-    desc: 'We are 5 years of experienced in this yoga field. Giving the best instructions.',
+    startNumber: "1",
+    endNumber: "7",
+    unit: "",
+    title: "Services we Offer",
+    desc: "We have more than 7 services that can help you improve your connectivity with your soul.",
   },
   {
-    startNumber: '1',
-    endNumber: '5',
-    unit: 'K',
-    title: 'Happy Clients',
-    desc: 'We have over five thousand clients all over the world. They are very satisfied.',
+    startNumber: "1",
+    endNumber: "5",
+    unit: "K",
+    title: "Happy Clients",
+    desc: "We have over five thousand clients all over the world. They are very satisfied.",
   },
+];
+
+export const about = [
   {
-    startNumber: '1',
-    endNumber: '15',
-    unit: '',
-    title: 'Experienced Trainers',
-    desc: 'We have over fifteen dedicated and experienced trainer for yoga and meditation.',
-  },
-  {
-    startNumber: '1',
-    endNumber: '24',
-    unit: '',
-    title: 'Monthly Classes',
-    desc: 'Yoga is a physical, mental and spritual practice discipline. We provide 24+ classes monthly.',
+    title: "About Us",
+    desc: "We are a company that offers alternative and complementary therapy services with the aim of balancing the physical, mental and emotional body in the person. Our approach is to share tools that help you transform your mental perspective. May you have a greater ability to make decisions, develop skills to manage stress and may experience feelings of calm and peace.",
   },
 ];
 
 export const courses = [
   {
     image: CourseImage1,
-    title: 'Sound healing & meditation up to 5 people',
-    desc: 'Guided meditation accompanied by a sound therapy with a duration of 60 minutes.',
-    link: 'Schedule now',
-    delay: '600',
-    calendlyurl: 'https://calendly.com/luzeehel/meditation-session-group-5'
+    title: "Sound healing & meditation up to 5 people",
+    desc: "Guided meditation accompanied by a sound therapy with a duration of 60 minutes.",
+    link: "Schedule now",
+    delay: "600",
+    calendlyurl: "https://calendly.com/luzeehel/meditation-session-group-5",
   },
   {
     image: CourseImage2,
-    title: 'Sound healing + meditation up to 10 people',
-    desc: 'Guided meditation accompanied by a sound therapy with a duration of 60 minutes.',
-    link: 'Schedule now',
-    delay: '800',
-    calendlyurl: 'https://calendly.com/luzeehel/sound-healing-meditation-up-to-10-people'
+    title: "Sound healing + meditation up to 10 people",
+    desc: "Guided meditation accompanied by a sound therapy with a duration of 60 minutes.",
+    link: "Schedule now",
+    delay: "800",
+    calendlyurl:
+      "https://calendly.com/luzeehel/sound-healing-meditation-up-to-10-people",
   },
   {
     image: CourseImage3,
-    desc: 'Guided meditation accompanied by a sound therapy with a duration of 60 minutes.',
-    link: 'Schedule now',
-    delay: '900',
-    calendlyurl: 'https://calendly.com/luzeehel/meditation-session-group-5'
+    desc: "Guided meditation accompanied by a sound therapy with a duration of 60 minutes.",
+    link: "Schedule now",
+    delay: "900",
+    calendlyurl: "https://calendly.com/luzeehel/meditation-session-group-5",
   },
 ];
 
@@ -90,183 +84,184 @@ export const testimonials = [
   {
     authorImg: TestiImage1,
     authorText:
-      'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-    authorName: 'Olivia Doe',
-    authorPosition: 'Head of Design, Google',
+      "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+    authorName: "Olivia Doe",
+    authorPosition: "Head of Design, Google",
   },
   {
     authorImg: TestiImage2,
     authorText:
-      'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-    authorName: 'Olivia Doe',
-    authorPosition: 'Head of Design, Google',
+      "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+    authorName: "Olivia Doe",
+    authorPosition: "Head of Design, Google",
   },
   {
     authorImg: TestiImage3,
     authorText:
-      'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-    authorName: 'Olivia Doe',
-    authorPosition: 'Head of Design, Google',
+      "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+    authorName: "Olivia Doe",
+    authorPosition: "Head of Design, Google",
   },
 ];
 
 export const pricing = [
   {
     id: 1,
-    title: 'Get in Touch',
-    price: 'FREE',
+    title: "Get in Touch",
+    price: "FREE",
     list: [
       {
         icon: <BsCheck />,
-        name: 'Pay as you go',
+        name: "Get in Touch for free",
       },
       {
         icon: <BsCheck />,
-        name: 'Perfect for non-residence',
+        name: "Know more about our Services",
       },
       {
         icon: <BsCheck />,
-        name: 'Acces to all classes',
+        name: "Ask me all the questions you have",
       },
       {
         icon: <BsCheck />,
-        name: 'Acces to all mentors',
+        name: "Talk about your problems",
       },
     ],
-    buttonText: 'Book now',
+    buttonText: "Book now",
     buttonIcon: <BsChevronRight />,
-    delay: '900',
-    calendlyurl: 'https://calendly.com/luzeehel/get-in-touch'
+    delay: "900",
+    calendlyurl: "https://calendly.com/luzeehel/get-in-touch",
   },
   {
     id: 2,
-    title: 'Meditation Session',
-    price: '$77.',
+    title: "Meditation Session",
+    price: "$77",
     list: [
       {
         icon: <BsCheck />,
-        name: 'Pay as you go',
+        name: "Improve your Sleep",
       },
       {
         icon: <BsCheck />,
-        name: 'Perfect for non-residence',
+        name: "Focus on the present moment",
       },
       {
         icon: <BsCheck />,
-        name: 'Acces to all classes',
+        name: "Lower blood pressure at rest",
       },
+      {
+        icon: <BsCheck />,
+        name: "Control symptoms of anxiety",
+      },
+      
     ],
-    buttonText: 'Book now',
+    buttonText: "Book now",
     buttonIcon: <BsChevronRight />,
-    delay: '600',
-    calendlyurl: 'https://calendly.com/luzeehel/meditation-session'
+    delay: "600",
+    calendlyurl: "https://calendly.com/luzeehel/meditation-session",
   },
   {
     id: 3,
-    title: 'Mini Meditation Session',
-    price: '$44.',
+    title: "Mini Meditation Session",
+    price: "$44",
     list: [
       {
         icon: <BsCheck />,
-        name: 'Pay as you go',
+        name: "Pay as you go",
       },
       {
         icon: <BsCheck />,
-        name: 'Perfect for non-residence',
+        name: "Control symptoms of depression",
       },
       {
         icon: <BsCheck />,
-        name: 'Acces to all classes',
+        name: "relax your nervous system",
       },
       {
         icon: <BsCheck />,
-        name: 'Acces to all mentors',
+        name: "regulate your emotions",
       },
     ],
-    buttonText: 'Book now',
+    buttonText: "Book now",
     buttonIcon: <BsChevronRight />,
-    delay: '800',
-    calendlyurl: 'https://calendly.com/luzeehel/mini-meditation-session'
+    delay: "800",
+    calendlyurl: "https://calendly.com/luzeehel/mini-meditation-session",
   },
   {
     id: 4,
-    title: 'Reiki Therapy',
-    price: '$88.',
+    title: "Reiki Therapy",
+    price: "$88",
     list: [
       {
         icon: <BsCheck />,
-        name: 'Pay as you go',
+        name: "Increase mental clarity",
       },
       {
         icon: <BsCheck />,
-        name: 'Perfect for non-residence',
+        name: "improve self-esteem",
       },
       {
         icon: <BsCheck />,
-        name: 'Acces to all classes',
+        name: "Reduce stress",
       },
       {
         icon: <BsCheck />,
-        name: 'Acces to all mentors',
+        name: "Strengthen the immune system",
+      },
+      {
+        icon: <BsCheck />,
+        name: "Expand your creativity",
       },
     ],
-    buttonText: 'Book now',
+    buttonText: "Book now",
     buttonIcon: <BsChevronRight />,
-    delay: '900',
-    calendlyurl: 'https://calendly.com/luzeehel/reiki-therapy'
+    delay: "900",
+    calendlyurl: "https://calendly.com/luzeehel/reiki-therapy",
   },
   {
     id: 5,
-    title: 'Reiki Chair Therapy',
-    price: '$55.',
+    title: "Reiki Chair Therapy",
+    price: "$55",
     list: [
       {
         icon: <BsCheck />,
-        name: 'Pay as you go',
+        name: "Increase mental clarity",
       },
       {
         icon: <BsCheck />,
-        name: 'Perfect for non-residence',
+        name: "improve self-esteem",
       },
       {
         icon: <BsCheck />,
-        name: 'Acces to all classes',
+        name: "Reduce stress",
       },
       {
         icon: <BsCheck />,
-        name: 'Acces to all mentors',
+        name: "Strengthen the immune system",
+      },
+      {
+        icon: <BsCheck />,
+        name: "Expand your creativity",
       },
     ],
-    buttonText: 'Book now',
+    buttonText: "Book now",
     buttonIcon: <BsChevronRight />,
-    delay: '900',
-    calendlyurl: 'https://calendly.com/luzeehel/chair-reiki-therapy'
+    delay: "900",
+    calendlyurl: "https://calendly.com/luzeehel/chair-reiki-therapy",
   },
   {
     id: 6,
-    title: 'Conscious Breathing Training',
-    price: '$222.',
+    title: "Conscious Breathing Training",
+    price: "$222",
     list: [
       {
         icon: <BsCheck />,
-        name: 'Pay as you go',
-      },
-      {
-        icon: <BsCheck />,
-        name: 'Perfect for non-residence',
-      },
-      {
-        icon: <BsCheck />,
-        name: 'Acces to all classes',
-      },
-      {
-        icon: <BsCheck />,
-        name: 'Acces to all mentors',
+        name: "All of the above",
       },
     ],
-    buttonText: 'Book now',
+    buttonText: "Book now",
     buttonIcon: <BsChevronRight />,
-    delay: '900',
-    calendlyurl: 'https://calendly.com/luzeehel/conscious-breathing-training'
-  }
+    delay: "900",
+    calendlyurl: "https://calendly.com/luzeehel/conscious-breathing-training",
+  },
 ];
