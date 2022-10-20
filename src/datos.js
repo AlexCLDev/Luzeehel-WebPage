@@ -1,5 +1,5 @@
 // import icons
-import { BsCheck, BsChevronRight } from "react-icons/bs";
+import { BsCheck, BsChevronRight, BsMenuDown } from "react-icons/bs";
 
 // import images
 import CourseImage1 from "../src/assets/img/courses/course-1.png";
@@ -10,50 +10,50 @@ import TestiImage1 from "../src/assets/img/courses/course-1.png";
 import TestiImage2 from "../src/assets/img/courses/course-2.png";
 import TestiImage3 from "../src/assets/img/courses/course-3.png";
 
-export const navigation = [
+export const navegacion = [
   {
-    name: "Home",
+    name: "Inicio",
     href: "#",
   },
   {
-    name: "Classes",
+    name: "Clases",
     href: "#",
   },
   {
-    name: "Services",
+    name: "Servicios",
     href: "#",
   },
   {
-    name: "About us",
+    name: "Acerca de",
     href: "#",
   },
   {
-    name: "Contact",
+    name: "Contactanos",
     href: "#",
   },
 ];
 
-export const facts = [
+export const acercada = [
   {
     startNumber: "1",
     endNumber: "7",
     unit: "",
-    title: "Services we Offer",
-    desc: "We have more than 7 services that can help you improve your connectivity with your soul.",
+    title: "Servicios que Ofrecemos",
+    desc: "Tenemos mas de 7 servicios que pueden ayudarte a mejorar tu conectividad con tu alma.",
   },
   {
     startNumber: "1",
     endNumber: "5",
-    unit: "K",
-    title: "Happy Clients",
-    desc: "We have over five thousand clients all over the world. They are very satisfied.",
+    unit: "Mil",
+    title: "Clientes Felices",
+    desc: "Hemos atendido mas de 5 mil clientes al rededor de todo el mundo. Estan muy satisfechos.",
   },
 ];
 
-export const about = [
+export const acerca = [
   {
-    title: "About Us",
-    desc: "We are a company that offers alternative and complementary therapy services with the aim of balancing the physical, mental and emotional body in the person. Our approach is to share tools that help you transform your mental perspective. May you have a greater ability to make decisions, develop skills to manage stress and may experience feelings of calm and peace.",
+    title: "Sobre Nosotros",
+    desc: "Somos una empresa que ofrece servicios de terapias alternativas y complementarias con el objetivo de equilibrar el cuerpo físico, mental y emocional en la persona. Nuestro enfoque es compartir herramientas que te ayuden a transformar tu perspectiva mental. Que tengas una mayor capacidad para tomar decisiones, desarrolles habilidades para manejar el estrés y puedas experimentar sentimientos de calma y paz.",
   },
 ];
 

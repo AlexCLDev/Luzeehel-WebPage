@@ -1,15 +1,21 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 // import parallax
 import { Parallax } from "react-parallax";
 // import image
 import Image from "../assets/img/hero/guy.png";
 import Header from "./Header";
 
-const Hero = () => {
-  return (
-    <section className="min-h-[618px] lg:min-h-[815px] pt-9 lg:bg-circle lg:bg-no-repeat lg:bg-right-top">
-      <div className="container mx-auto">
-        <Header />
+const Hero = ({ language }) => {
+  const [languageState, setLanguage] = useState(language);
+
+  useEffect(()=>{
+    setLanguage(language)
+  }, [language])
+  return (  
+    <section className="">
+      <div className="">
         <div className="flex flex-col items-center lg:flex-row lg:items-start pt-32 lg:pt-32">
           <div className="flex-1 lg:mt-12">
             <h1
@@ -17,27 +23,51 @@ const Hero = () => {
               data-aos="fade-down"
               data-aos-delay="500"
             >
-              Luzee-heal <br /> Be one with your soul
+              {languageState == true? (
+                <p>
+                  Luzee-heal <br />
+                  Be one with your soul
+                </p>
+              ) : (
+                <p>
+                  Luzee-heal <br />
+                  Se uno contigo y tu alma
+                </p>
+              )}
             </h1>
             <p
               className="mb-6 lg:mb-12 max-w-[480px] lg:text-lg"
               data-aos="fade-down"
               data-aos-delay="600"
             >
-              Meditation and sound healing facilitator 🧘‍♀️ - Reiki Practitioner
-              -Healing my mind, heart and body one day at a time
+              {languageState == true
+                ? "Meditation and sound healing facilitator 🧘‍♀️ - Reiki Practitioner - Healing my mind, heart and body one day at a time"
+                : "Facilitador de meditación y sanación con sonido 🧘‍♀️ - Practicante de Reiki - Sanando mi mente, corazón y cuerpo un día a la vez"}
             </p>
             <div
               className="mb-12 space-x-4"
               data-aos="fade-down"
               data-aos-delay="700"
             >
-              <button className="btn btn-sm lg:btn-lg btn-blue">
-                Get started
-              </button>
-              <button className="btn btn-sm lg:btn-lg text-heading bg-transparent border border-stroke-1 px-4 lg:px-4 hover:bg-stroke-3 transition">
-                Learn more
-              </button>
+              {languageState == true ? (
+                <>
+                  <button className="btn btn-sm lg:btn-lg btn-blue">
+                    Get started
+                  </button>
+                  <button className="btn btn-sm lg:btn-lg text-heading bg-transparent border border-stroke-1 px-4 lg:px-4 hover:bg-stroke-3 transition">
+                    Learn more
+                  </button>
+                </>
+              ) : (
+                <>
+                <button className="btn btn-sm lg:btn-lg btn-blue">
+                    Contactanos
+                  </button>
+                  <button className="btn btn-sm lg:btn-lg text-heading bg-transparent border border-stroke-1 px-4 lg:px-4 hover:bg-stroke-3 transition">
+                    Leer más
+                  </button>
+                  </>
+              )}
             </div>
           </div>
           <div className="w-full bg-circle bg-cover lg:bg-none lg:w-auto">

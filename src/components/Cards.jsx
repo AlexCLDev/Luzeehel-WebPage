@@ -1,11 +1,13 @@
 import React from "react";
+import { useState } from "react";
 
 // images
 import CardImage1 from "../assets/img/cards/card-1.png";
 import CardImage2 from "../assets/img/cards/card-2.png";
 import CardImage3 from "../assets/img/cards/card-3.png";
 
-const Cards = () => {
+const Cards = ({ language }) => {
+  const [languageState, setLanguage] = useState(language);
   return (
     <section
       className="bg-cardsBg min-h-[260px] pb-[55px] lg:-mt-24"
@@ -24,7 +26,7 @@ const Cards = () => {
           >
             <div className="flex items-center mb-[18px] lg:mb-[28px]">
               <h4 className="text-lg lg:text-2xl lg:leading-7 font-bold text-heading mr-8">
-                Guided Meditation.
+                {languageState == 'English' ? 'Guided Meditation' : 'Meditacion Guiada'}
               </h4>
               <h2 className="h2 text-stroke-2">1</h2>
             </div>
@@ -40,7 +42,7 @@ const Cards = () => {
           >
             <div className="flex items-center mb-[18px] lg:mb-[28px]">
               <h4 className="text-lg lg:text-2xl lg:leading-7 font-bold text-heading mr-8">
-                Reiki &nbsp; therapy.
+                {languageState == 'English' ? <p>Reiki &nbsp; &nbsp; therapy</p> : <p>Terapia &nbsp; &nbsp; Reiki</p>}
               </h4>
               <h2 className="h2 text-stroke-2">2</h2>
             </div>
@@ -58,19 +60,20 @@ const Cards = () => {
           <div className="max-w-[240px]">
             <div className="flex items-center mb-4 lg:mb-8">
               <h4 className="text-lg lg:text-2xl lg:leading-7 font-bold text-heading mr-8">
-                Know more about us.
+              {languageState == 'English' ? 'Know more about us.' : 'Conoce mas sobre nosotros'}
               </h4>
               <h2 className="h2 text-stroke-2">3</h2>
             </div>
             <p className="mb-4 lg:mb-3">
-              We're a company that offers alternative and complementary therapy
-              services with the aim of balancing your soul.
+            {languageState == 'English' ? 'We re a company that offers alternative and complementary therapy services with the aim of balancing your soul.' 
+            :
+             'Somos una empresa que ofrece servicios de terapias con el objetivo de equilibrar tu alma.'}
             </p>
             <a
               className="text-xs lg:text-sm font-bold uppercase text-heading"
               href="#"
             >
-              Read more
+             {languageState == 'English' ? 'Read more' : 'Leer mas'}
             </a>
           </div>
           <div>
