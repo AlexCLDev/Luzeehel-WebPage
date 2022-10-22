@@ -1,9 +1,17 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 // import icons
 import { MdEmail } from 'react-icons/md';
 
-const Newsletter = () => {
+const Newsletter = ({language}) => {
+  const [languageState, setLanguage] = useState(language)
+
+  useEffect(()=>{
+    setLanguage(language)
+  },[language])
+
   return (
     <section className='section-sm lg:section-lg bg-green min-h-[520px] mt-[100px]'>
       <div className='container mx-auto'>
@@ -19,7 +27,8 @@ const Newsletter = () => {
             data-aos-delay='600'
             data-aos-offset='300'
           >
-            Subscribe Our Newsletter
+            {languageState == true ? 'Subscribe Our Newsletter'
+            : 'Suscrebete a Nuestro Periodico'}
           </h4>
           <p
             className='text-green-200 mb-12'
@@ -27,7 +36,8 @@ const Newsletter = () => {
             data-aos-delay='800'
             data-aos-offset='300'
           >
-            Subscribe our newsletter for further updates about us
+            {languageState == true ? 'Subscribe our newsletter for further updates about us'
+            : 'Suscribete a nuestro periodico para futuras actualizaciones sobre nosotros'}
           </p>
           <form
             className='max-w-[752px] mx-auto relative flex flex-col lg:flex-row gap-y-6 p-4 lg:p-0 gap-x-4'
@@ -45,7 +55,8 @@ const Newsletter = () => {
               />
             </div>
             <button className='btn btn-lg bg-brown text-white w-full lg:max-w-[180px]'>
-              Get started
+              {languageState == true ? 'Suscribe'
+              : 'Suscribirse'}
             </button>
           </form>
         </div>

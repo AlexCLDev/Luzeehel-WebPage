@@ -105,7 +105,7 @@ const Facts = ({ language }) => {
               data-aos="fade-down"
               data-aos-delay="500"
             >
-              {languageState == "English"
+              {languageState == true
                 ? "Relax And Enjoy a Personalized Day Yoga With Us."
                 : "Relajate y disfruta un dia personalizado de Yoga con nosotros."}
             </h2>

@@ -57,213 +57,214 @@ export const acerca = [
   },
 ];
 
-export const courses = [
+export const cursos = [
   {
     image: CourseImage1,
-    title: "Sound healing & meditation up to 5 people",
-    desc: "Guided meditation accompanied by a sound therapy with a duration of 60 minutes.",
-    link: "Schedule now",
+    title: "Sonido sanador y meditación para hasta 5 personas",
+    desc: "Meditación guiada acompañada por sonido terapeutico, con una duracion de 60 minutos.",
+    link: "Agenda ahora",
     delay: "600",
     calendlyurl: "https://calendly.com/luzeehel/meditation-session-group-5",
   },
   {
     image: CourseImage2,
-    title: "Sound healing + meditation up to 10 people",
-    desc: "Guided meditation accompanied by a sound therapy with a duration of 60 minutes.",
-    link: "Schedule now",
+    title: "Sonido sanador y meditación para hasta 5 personas",
+    desc: "Meditación guiada acompañada por sonido terapeutico, con una duracion de 60 minutos.",
+    link: "Agenda ahora",
     delay: "800",
     calendlyurl:
       "https://calendly.com/luzeehel/sound-healing-meditation-up-to-10-people",
   },
   {
     image: CourseImage3,
-    desc: "Guided meditation accompanied by a sound therapy with a duration of 60 minutes.",
-    link: "Schedule now",
+    title: "Descubrir más",
+    desc: "Meditación guiada acompañada por sonido terapeutico, con una duracion de 60 minutos.",
+    link: "Agenda ahora",
     delay: "900",
     calendlyurl: "https://calendly.com/luzeehel/meditation-session-group-5",
   },
 ];
 
-export const testimonials = [
+export const testimonios = [
   {
     authorImg: TestiImage1,
     authorText:
-      "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+      "Me encanta la simplicidad del servicio y la pronta atención al cliente. No podemos imaginarnos trabajando sin él.",
     authorName: "Olivia Doe",
-    authorPosition: "Head of Design, Google",
+    authorPosition: "Cabeza del diseño, Google",
   },
   {
     authorImg: TestiImage2,
     authorText:
-      "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+      "Me encanta la simplicidad del servicio y la pronta atención al cliente. No podemos imaginarnos trabajando sin él.",
     authorName: "Olivia Doe",
-    authorPosition: "Head of Design, Google",
+    authorPosition: "Cabeza del diseño, Google",
   },
   {
     authorImg: TestiImage3,
     authorText:
-      "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+      "Me encanta la simplicidad del servicio y la pronta atención al cliente. No podemos imaginarnos trabajando sin él.",
     authorName: "Olivia Doe",
-    authorPosition: "Head of Design, Google",
+    authorPosition: "Cabeza del diseño, Google",
   },
 ];
 
-export const pricing = [
+export const precios = [
   {
     id: 1,
-    title: "Get in Touch",
-    price: "FREE",
+    title: "Ponte en Contacto",
+    price: "GRATIS",
     list: [
       {
         icon: <BsCheck />,
-        name: "Get in Touch for free",
+        name: "Ponte en contacto con nosotros GRATIS",
       },
       {
         icon: <BsCheck />,
-        name: "Know more about our Services",
+        name: "Conoce mas sobre nuestros servicios",
       },
       {
         icon: <BsCheck />,
-        name: "Ask me all the questions you have",
+        name: "Aclara todas tus dudas",
       },
       {
         icon: <BsCheck />,
-        name: "Talk about your problems",
+        name: "Hablanos sobre tu problema",
       },
     ],
-    buttonText: "Book now",
+    buttonText: "Agenda ahora",
     buttonIcon: <BsChevronRight />,
     delay: "900",
     calendlyurl: "https://calendly.com/luzeehel/get-in-touch",
   },
   {
     id: 2,
-    title: "Meditation Session",
+    title: "Sesión de Meditacio",
     price: "$77",
     list: [
       {
         icon: <BsCheck />,
-        name: "Improve your Sleep",
+        name: "Mejora tu sueño",
       },
       {
         icon: <BsCheck />,
-        name: "Focus on the present moment",
+        name: "Enfócate en el presente",
       },
       {
         icon: <BsCheck />,
-        name: "Lower blood pressure at rest",
+        name: "Baja la presión sanguinea al descansar",
       },
       {
         icon: <BsCheck />,
-        name: "Control symptoms of anxiety",
+        name: "Controla síntomas de ansiedad",
       },
       
     ],
-    buttonText: "Book now",
+    buttonText: "Agenda ahora",
     buttonIcon: <BsChevronRight />,
     delay: "600",
     calendlyurl: "https://calendly.com/luzeehel/meditation-session",
   },
   {
     id: 3,
-    title: "Mini Meditation Session",
+    title: "Mini Sesión de Meditación",
     price: "$44",
     list: [
       {
         icon: <BsCheck />,
-        name: "Pay as you go",
+        name: "Paga y Agenda",
       },
       {
         icon: <BsCheck />,
-        name: "Control symptoms of depression",
+        name: "Controla síntomas de depresión",
       },
       {
         icon: <BsCheck />,
-        name: "relax your nervous system",
+        name: "Relaja tu sistema nervioso",
       },
       {
         icon: <BsCheck />,
-        name: "regulate your emotions",
+        name: "Regula tus emociones",
       },
     ],
-    buttonText: "Book now",
+    buttonText: "Agenda ahora",
     buttonIcon: <BsChevronRight />,
     delay: "800",
     calendlyurl: "https://calendly.com/luzeehel/mini-meditation-session",
   },
   {
     id: 4,
-    title: "Reiki Therapy",
+    title: "Terapia Reiki",
     price: "$88",
     list: [
       {
         icon: <BsCheck />,
-        name: "Increase mental clarity",
+        name: "Incrementa tu claridad mental",
       },
       {
         icon: <BsCheck />,
-        name: "improve self-esteem",
+        name: "Mejora tu autoestima",
       },
       {
         icon: <BsCheck />,
-        name: "Reduce stress",
+        name: "Reduce el estrés",
       },
       {
         icon: <BsCheck />,
-        name: "Strengthen the immune system",
+        name: "Fortalecer el sistema inmunológico",
       },
       {
         icon: <BsCheck />,
-        name: "Expand your creativity",
+        name: "Expande tu creatividad",
       },
     ],
-    buttonText: "Book now",
+    buttonText: "Agenda ahora",
     buttonIcon: <BsChevronRight />,
     delay: "900",
     calendlyurl: "https://calendly.com/luzeehel/reiki-therapy",
   },
   {
     id: 5,
-    title: "Reiki Chair Therapy",
+    title: "Terapia de Silla Reiki",
     price: "$55",
     list: [
       {
         icon: <BsCheck />,
-        name: "Increase mental clarity",
+        name: "Incrementa tu claridad mental",
       },
       {
         icon: <BsCheck />,
-        name: "improve self-esteem",
+        name: "Mejora tu autoestima",
       },
       {
         icon: <BsCheck />,
-        name: "Reduce stress",
+        name: "Reduce el estrés",
       },
       {
         icon: <BsCheck />,
-        name: "Strengthen the immune system",
+        name: "Fortalecer el sistema inmunológico",
       },
       {
         icon: <BsCheck />,
-        name: "Expand your creativity",
+        name: "Expande tu creatividad",
       },
     ],
-    buttonText: "Book now",
+    buttonText: "Agenda ahora",
     buttonIcon: <BsChevronRight />,
     delay: "900",
     calendlyurl: "https://calendly.com/luzeehel/chair-reiki-therapy",
   },
   {
     id: 6,
-    title: "Conscious Breathing Training",
+    title: "Entrenamiento de respiración consciente",
     price: "$222",
     list: [
       {
         icon: <BsCheck />,
-        name: "All of the above",
+        name: "Todas las anteriores",
       },
     ],
-    buttonText: "Book now",
+    buttonText: "Agenda ahora",
     buttonIcon: <BsChevronRight />,
     delay: "900",
     calendlyurl: "https://calendly.com/luzeehel/conscious-breathing-training",

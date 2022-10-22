@@ -38,7 +38,12 @@ export const Home = () => {
     console.log(languageState);
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      window.scrollY > 36 ? setHeader(true) : setHeader(false);
+    });
+  }, [header]);
+
   return (
     <>
       <section className="min-h-[618px] lg:min-h-[815px] pt-9 lg:bg-circle lg:bg-no-repeat lg:bg-right-top">
@@ -63,19 +68,19 @@ export const Home = () => {
                 {languageState == true ? (
                   <>
                     <button className="text-heading font-medium text-sm lg:text-base hover:text-blue transition">
-                      Get in touch
+                      Schedule
                     </button>
                     <button onClick={Idioma} className="btn btn-md lg:px-[30px] bg-blue-100 border border-blue text-blue font-medium text-sm lg:text-base hover:bg-blue-200 hover:text-black transition">
-                      Change to Spanish
+                      To Spanish
                     </button>
                   </>
                 ) : (
                   <>
                     <button className="text-heading font-medium text-sm lg:text-base hover:text-blue transition">
-                      Ponte en contacto
+                      Agenda
                     </button>
                     <button onClick={Idioma} className="btn btn-md lg:px-[30px] bg-blue-100 border border-blue text-blue font-medium text-sm lg:text-base hover:bg-blue-200 hover:text-black transition">
-                      Cambiar a Español
+                      A Ingles
                     </button>
                   </>
                 )}

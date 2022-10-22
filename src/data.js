@@ -77,6 +77,7 @@ export const courses = [
   },
   {
     image: CourseImage3,
+    title: 'Discover All',
     desc: "Guided meditation accompanied by a sound therapy with a duration of 60 minutes.",
     link: "Schedule now",
     delay: "900",
@@ -171,7 +172,7 @@ export const pricing = [
     list: [
       {
         icon: <BsCheck />,
-        name: "Pay as you go",
+        name: "Pay and Schedule",
       },
       {
         icon: <BsCheck />,

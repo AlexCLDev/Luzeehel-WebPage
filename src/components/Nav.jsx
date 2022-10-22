@@ -8,7 +8,7 @@ const Nav = ({language}) => {
   const [languageState, setLanguage] = useState(language);
 
   useEffect(()=>{
-    console.log(languageState)
+    setLanguage(language)
   },[language])
   return (
     <nav className='ml-[70px]'>
