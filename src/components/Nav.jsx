@@ -18,7 +18,7 @@ const Nav = ({language}) => {
         {navigation.map((item, index)=>{
           return(
             <li key={index}>
-              <a href=''>{item.name}</a>
+              <a href={item.href}>{item.name}</a>
             </li>
           );
         })}   
@@ -28,7 +28,7 @@ const Nav = ({language}) => {
         {navegacion.map((item, index)=>{
           return(
             <li key={index}>
-              <a href=''>{item.name}</a>
+              <a href={item.href}>{item.name}</a>
             </li>
           );
         })}   

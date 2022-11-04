@@ -19,7 +19,7 @@ const Facts = ({ language }) => {
     setLanguage(language)
   }, [language])
   return (
-    <section className="section-sm lg:section-lg">
+    <section className="section-sm lg:section-lg" id='aboutus'>
       <div className="container mx-auto flex flex-col lg:flex-row lg:gap-x-[30px]">
         <div
           className="flex-1 flex flex-wrap gap-x-[5%] gap-y-[35px]"

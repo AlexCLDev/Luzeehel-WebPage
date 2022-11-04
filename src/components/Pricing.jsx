@@ -27,7 +27,7 @@ const Pricing = ({ language }, props) => {
   return (
     <section className="section-sm lg:section-lg bg-section">
       <div className="container mx-auto">
-        <div className="text-center mb-7 lg:mb-[70px]">
+        <div className="text-center mb-7 lg:mb-[70px]" id='services'>
           <h2
             className="h2 mb-3 lg:mb-[18px]"
             data-aos="fade-up"
@@ -79,6 +79,7 @@ const Pricing = ({ language }, props) => {
                             ? "bg-blue text-white"
                             : "bg-white text-heading"
                         } text-center pb-[34px] pt-[70px] border-b border-stroke-3 transition `}
+                        onClick={() => ModalO(calendlyurl)} 
                       >
                         <div className="text-[24px] font-medium mb-[10px]">
                           {title}
@@ -168,6 +169,7 @@ const Pricing = ({ language }, props) => {
                             ? "bg-blue text-white"
                             : "bg-white text-heading"
                         } text-center pb-[34px] pt-[70px] border-b border-stroke-3 transition `}
+                        onClick={() => ModalO(calendlyurl)} 
                       >
                         <div className="text-[24px] font-medium mb-[10px]">
                           {title}

@@ -45,7 +45,7 @@ export const Home = () => {
   }, [header]);
 
   return (
-    <>
+    <div className="main">
       <section className="min-h-[618px] lg:min-h-[815px] pt-9 lg:bg-circle lg:bg-no-repeat lg:bg-right-top">
         <div className="container mx-auto">
           <header
@@ -55,7 +55,7 @@ export const Home = () => {
           >
             <div className="flex items-center">
               {/* logo */}
-              <a href="#">
+              <a href="#home">
                 <img src={Logo} alt="" className="h-[150px] max-w-[378px] " />
               </a>
               {/* nav */}
@@ -71,7 +71,7 @@ export const Home = () => {
                       Schedule
                     </button>
                     <button onClick={Idioma} className="btn btn-md lg:px-[30px] bg-blue-100 border border-blue text-blue font-medium text-sm lg:text-base hover:bg-blue-200 hover:text-black transition">
-                      To Spanish
+                      Spanish
                     </button>
                   </>
                 ) : (
@@ -80,7 +80,7 @@ export const Home = () => {
                       Agenda
                     </button>
                     <button onClick={Idioma} className="btn btn-md lg:px-[30px] bg-blue-100 border border-blue text-blue font-medium text-sm lg:text-base hover:bg-blue-200 hover:text-black transition">
-                      A Ingles
+                      Ingles
                     </button>
                   </>
                 )}
@@ -104,6 +104,6 @@ export const Home = () => {
         <Contact language={languageState} />
         <Footer language={languageState} />
       </div>
-    </>
+    </div>
   );
 };

@@ -29,7 +29,7 @@ const Courses = ({language}, props) => {
   }, [language]);
 
   return (
-    <section className='section-sm lg:section-lg'>
+    <section className='section-sm lg:section-lg' id='classes'>
       <div className='container mx-auto'>
         {/* text */}
         <div className='text-center mb-16 lg:mb-32'>
@@ -62,6 +62,7 @@ const Courses = ({language}, props) => {
                 data-aos='fade-up'
                 data-aos-delay={delay}
                 key={index}
+                onClick={() => ModalO(calendlyurl)} 
               >
                 <div className='-mt-[38px] lg:-mt-12 mb-4 lg:mb-6'>
                   <img src={image} alt='' />
@@ -99,6 +100,7 @@ const Courses = ({language}, props) => {
                 data-aos='fade-up'
                 data-aos-delay={delay}
                 key={index}
+                onClick={() => ModalO(calendlyurl)} 
               >
                 <div className='-mt-[38px] lg:-mt-12 mb-4 lg:mb-6'>
                   <img src={image} alt='' />

@@ -14,7 +14,7 @@ const Hero = ({ language }) => {
     setLanguage(language)
   }, [language])
   return (  
-    <section className="">
+    <section className="" id="home">
       <div className="">
         <div className="flex flex-col items-center lg:flex-row lg:items-start pt-32 lg:pt-32">
           <div className="flex-1 lg:mt-12">
@@ -78,9 +78,9 @@ const Hero = ({ language }) => {
             >
               <div className="w-[234px] h-[234px] lg:w-[504px] lg:h-[744px] lg:mt-0">
                 <Parallax
-                  className="w-full h-full p-28 lg:p-16"
+                  className="w-full h-full p-28 lg:p-16 "
                   bgImage={Image}
-                  bgImageAlt="guy"
+                  bgImageAlt="logo"
                   strength={200}
                 ></Parallax>
               </div>

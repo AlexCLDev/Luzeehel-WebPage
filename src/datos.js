@@ -13,23 +13,23 @@ import TestiImage3 from "../src/assets/img/courses/course-3.png";
 export const navegacion = [
   {
     name: "Inicio",
-    href: "#",
+    href: "#home",
   },
   {
     name: "Clases",
-    href: "#",
+    href: "#classes",
   },
   {
     name: "Servicios",
-    href: "#",
+    href: "#services",
   },
   {
     name: "Acerca de",
-    href: "#",
+    href: "#aboutus",
   },
   {
     name: "Contactanos",
-    href: "#",
+    href: "#contact",
   },
 ];
 

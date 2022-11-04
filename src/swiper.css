@@ -5,3 +5,15 @@
   .swiper-pagination-bullet {
     background-color: #ac6b34;
   }
+
+.main {
+  background-image: url('./assets/img/hero/guy.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 10%;
+}
+
+*{
+  scroll-behavior: smooth;
+}
