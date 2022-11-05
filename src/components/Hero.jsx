@@ -21,7 +21,7 @@ const Hero = ({ language }) => {
             <h1
               className="h1 mb-3 lg:mb-[22px]"
               data-aos="fade-down"
-              data-aos-delay="500"
+              data-aos-delay="200"
             >
               {languageState == true? (
                 <p>
@@ -38,7 +38,7 @@ const Hero = ({ language }) => {
             <p
               className="mb-6 lg:mb-12 max-w-[480px] lg:text-lg"
               data-aos="fade-down"
-              data-aos-delay="600"
+              data-aos-delay="300"
             >
               {languageState == true
                 ? "Meditation and sound healing facilitator 🧘‍♀️ - Reiki Practitioner - Healing my mind, heart and body one day at a time"
@@ -51,21 +51,25 @@ const Hero = ({ language }) => {
             >
               {languageState == true ? (
                 <>
-                  <button className="btn btn-sm lg:btn-lg btn-blue">
+                   <a href="#services"><button className="btn btn-sm lg:btn-lg btn-blue">
                     Get started
                   </button>
-                  <button className="btn btn-sm lg:btn-lg text-heading bg-transparent border border-stroke-1 px-4 lg:px-4 hover:bg-stroke-3 transition">
+                  </a>
+                  <a href="#aboutus"><button className="btn btn-sm lg:btn-lg text-heading bg-transparent border border-stroke-1 px-4 lg:px-4 hover:bg-stroke-3 transition">
                     Learn more
                   </button>
+                  </a>
                 </>
               ) : (
                 <>
-                <button className="btn btn-sm lg:btn-lg btn-blue">
-                    Contactanos
+                <a href="#services"><button className="btn btn-sm lg:btn-lg btn-blue">
+                    Inicia con Nosotros
                   </button>
-                  <button className="btn btn-sm lg:btn-lg text-heading bg-transparent border border-stroke-1 px-4 lg:px-4 hover:bg-stroke-3 transition">
-                    Leer más
+                  </a>
+                  <a href="#aboutus"><button className="btn btn-sm lg:btn-lg text-heading bg-transparent border border-stroke-1 px-4 lg:px-4 hover:bg-stroke-3 transition">
+                    Conoce más
                   </button>
+                  </a>
                   </>
               )}
             </div>

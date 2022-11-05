@@ -27,6 +27,7 @@ module.exports = {
         DEFAULT: '#779CAF',
         100: '#d7f0fc',
         200: '#7ccdf7',
+        300: '#8eacbc', 
         hover: '#51C2FC',
       },
       green: {
@@ -34,6 +35,7 @@ module.exports = {
         100: '#D4EEE9',
         200: '#94CAC0',
         300: '#45A090',
+        400: '#adc2bf'
       },
       brown: {
         DEFAULT: '#d0b4ac',
@@ -43,7 +45,7 @@ module.exports = {
       },
       yellow: '#EDC988',
       pink: {
-        DEFAULT: 'FF7D6B',
+        DEFAULT: '#FF7D6B',
         100: '#FFE9E4',
         200: '#FEAEA3',
       },

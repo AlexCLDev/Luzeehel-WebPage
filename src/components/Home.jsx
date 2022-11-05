@@ -17,6 +17,7 @@ import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import { useState } from "react";
 import { useEffect } from "react";
+import { PopupModal } from "react-calendly";
 
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
@@ -24,7 +25,7 @@ import NavMobile from "./NavMobile";
 // import logo
 import Logo from "../assets/img/LOGO1.png";
 
-export const Home = () => {
+export const Home = (props) => {
   Aos.init({
     duration: 1800,
     offset: 100,
@@ -32,10 +33,18 @@ export const Home = () => {
 
   const [languageState, setLanguage] = useState(true);
   const [header, setHeader] = useState(false);
+  const [isOpen, setisOpen] = useState(false);
+  const [modalUrl, setmodalUrl] = useState();
 
   const Idioma = () => {
     setLanguage(!languageState);
     console.log(languageState);
+  };
+
+  const ModalO = async (e) => {
+    setmodalUrl(e);
+
+    setisOpen(true);
   };
 
   useEffect(() => {
@@ -56,7 +65,7 @@ export const Home = () => {
             <div className="flex items-center">
               {/* logo */}
               <a href="#home">
-                <img src={Logo} alt="" className="h-[150px] max-w-[378px] " />
+                <img src={Logo} alt="" className="xl:h-[150px] xl:max-w-[378px] md:h-[75px] md:max-w-[189px] " />
               </a>
               {/* nav */}
               <div className="hidden lg:flex">
@@ -67,7 +76,8 @@ export const Home = () => {
               <div className="flex gap-x-4 lg:gap-x-9">
                 {languageState == true ? (
                   <>
-                    <button className="text-heading font-medium text-sm lg:text-base hover:text-blue transition">
+                    <button className="text-heading font-medium text-sm lg:text-base hover:text-blue transition"
+                    onClick={() => ModalO('https://calendly.com/luzeehel')}>
                       Schedule
                     </button>
                     <button onClick={Idioma} className="btn btn-md lg:px-[30px] bg-blue-100 border border-blue text-blue font-medium text-sm lg:text-base hover:bg-blue-200 hover:text-black transition">
@@ -76,7 +86,8 @@ export const Home = () => {
                   </>
                 ) : (
                   <>
-                    <button className="text-heading font-medium text-sm lg:text-base hover:text-blue transition">
+                    <button className="text-heading font-medium text-sm lg:text-base hover:text-blue transition"
+                    onClick={() => ModalO('https://calendly.com/luzeehel')}>
                       Agenda
                     </button>
                     <button onClick={Idioma} className="btn btn-md lg:px-[30px] bg-blue-100 border border-blue text-blue font-medium text-sm lg:text-base hover:bg-blue-200 hover:text-black transition">
@@ -104,6 +115,20 @@ export const Home = () => {
         <Contact language={languageState} />
         <Footer language={languageState} />
       </div>
+
+      <PopupModal
+          url={modalUrl}
+          pageSettings={props.pageSettings}
+          utm={props.utm}
+          prefill={props.prefill}
+          onModalClose={() => setisOpen(false)}
+          open={isOpen}
+          /*
+           * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+           * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+           */
+          rootElement={document.getElementById("root")}
+        />
     </div>
   );
 };

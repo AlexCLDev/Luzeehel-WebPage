@@ -50,7 +50,7 @@ const Features = ({language}) => {
                   Practice anywhere, anytime. Explore a new way to exercise and
                   learn more about yourself. We are providing the best.
                 </p>
-                <button className="btn btn-sm btn-blue">Get started</button>
+                <a href="#services"><button className="btn btn-sm btn-blue">Get started</button></a>
               </>
             ) : (
               <>
@@ -59,7 +59,7 @@ const Features = ({language}) => {
                   para ejercitarte y aprender mas sobre ti mismo.
                   Te proveemos los mejores servicios.
                 </p>
-                <button className="btn btn-sm btn-blue">Inicia ahora</button>
+                <a href="#services"><button className="btn btn-sm btn-blue">Inicia ahora</button></a>
               </>
             )}
           </div>
