@@ -1,4 +1,5 @@
 import React from 'react';
+import ComingSoon from './components/ComingSoon';
 import { Home } from './components/Home';
 
 // import aos
@@ -7,7 +8,7 @@ import { Home } from './components/Home';
 
 const App = () => {
   return (
-    <Home/>
+    <ComingSoon/>
   );
 };
 
