@@ -8,8 +8,8 @@ const ComingSoon = () => {
   return (
     <div className="mx-auto text-center flex">
       <img src={bg} className="w-[900px] mx-auto absolute right-0" />
-      <img src={Logo} className="w-[700px] mx-auto absolute mt-[5%]" />
-      <div className="ml-[55%] mt-[18%] z-10">
+      <img src={Logo} className="w-[700px] mx-auto absolute mt-[120%] md:mt-[5%]" />
+      <div className="md:ml-[55%] md:mt-[18%] ml-2 mt-[80%] z-10">
         <h1 className="text-[55px] font-medium text-heading ">Coming Soon!</h1>
         <span className="text-[20px]">We're doing some really amazing stuff!</span>
         <div className="mt-5 space-x-10">
