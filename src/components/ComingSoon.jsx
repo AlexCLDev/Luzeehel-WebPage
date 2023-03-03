@@ -13,12 +13,12 @@ const ComingSoon = () => {
         <h1 className="text-[55px] font-medium text-heading ">Coming Soon!</h1>
         <span className="text-[20px]">We're doing some really amazing stuff!</span>
         <div className="mt-5 space-x-10">
-          <a href="#services">
+          <a href="https://www.instagram.com/luzeeheal/" target="_blank">
             <button className="btn btn-sm lg:btn-lg btn-blue">
               Instagram
             </button>
           </a>
-          <a href="#aboutus">
+          <a href="https://calendly.com/luzeehel" target="_blank">
             <button className="btn btn-sm lg:btn-lg text-heading bg-blue border border-stroke-1 px-4 lg:px-4 hover:bg-stroke-3 transition">
               Schedule
             </button>
